@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view wx:if="{{!showWeatherDetail}}" class='title'bindtap='onTapToFetchTodayWeather'>
+  <text>今天</text>
+</view> 
+<view wx:if="{{!showWeatherDetail}}" class='title' bindtap='onTapToFetchTmrWeather'>
+  <text>明天</text>
+</view>
+
+<view wx:if="{{showWeatherDetail}}" bindtap='onTapToBack' class="detail">
+   <view class="city">
+    <text>{{weather.location.name}}</text>
+  </view> 
+  <view class="temperature">
+    <text>{{weather.daily[today].low}} - {{weather.daily[today].high}}</text>
+  </view> 
+  <view class="weather">
+    <text>{{weather.daily[today].text_day}}</text>
+  </view> 
+   <view class="weather">
+    <text>{{weather.daily[today].text_night}}</text>
+  </view> 
+</view>

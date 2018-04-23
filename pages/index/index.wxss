@@ -1,0 +1,42 @@
+page{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 82px;
+  width: 100%;
+  height: 50%;
+  border-bottom: 1px dashed grey;
+}
+
+.title:first-child {
+  border-top: 1px dashed grey;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail .city {
+  display: block;
+  font-size: 48px;
+}
+.detail .temperature {
+  display: block;
+  font-size: 36px;
+}
+.detail .weather {
+  display: block;
+  font-size: 42px;
+}
